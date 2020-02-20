@@ -4,12 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.ListAdapter;
 import android.widget.ListView;
 
 import com.google.android.gms.maps.model.LatLng;
@@ -34,8 +32,6 @@ public class MainActivity extends AppCompatActivity {
         ListView listView = findViewById(R.id.listView);
 
         SharedPreferences sharedPreferences = this.getSharedPreferences("com.fahmisbas.savegps", MODE_PRIVATE);
-        ArrayList<String> latitude = new ArrayList<>();
-        ArrayList<String> longitude = new ArrayList<>();
 
         longitude.clear();
         latitude.clear();
